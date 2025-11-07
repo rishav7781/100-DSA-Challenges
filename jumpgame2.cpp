@@ -14,7 +14,7 @@ public:
 
         // jitna nums[idx] jump de raha utne possible explore kro
         for(int jump = 1; jump <= nums[idx]; jump++){
-            ans = min(ans, 1 + solve(idx + jump, nums, n));
+            ans = min (ans, 1 + solve(idx + jump, nums, n));
         }
 
         return t[idx] = ans;
